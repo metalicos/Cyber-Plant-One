@@ -1,0 +1,40 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CDPidRegulator	KEYWORD1
+
+#######################################
+# Methods and Funcs (KEYWORD2)
+#######################################
+
+setMaintainValue	KEYWORD2
+setInput	KEYWORD2
+setKp	KEYWORD2
+setKi	KEYWORD2
+setKd	KEYWORD2
+setDt	KEYWORD2
+setMode	KEYWORD2
+setDirection	KEYWORD2
+setPwmLimits	KEYWORD2
+getMaintainValue	KEYWORD2
+getKp	KEYWORD2
+getKi	KEYWORD2
+getKd	KEYWORD2
+getDt	KEYWORD2
+getMode	KEYWORD2
+getDirection	KEYWORD2
+getPwmMinLimit	KEYWORD2
+getPwmMaxLimit	KEYWORD2
+getResult	KEYWORD2
+getResultTimer	KEYWORD2 
+getResultNow	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+INCREASING	LITERAL1
+DECREASING	LITERAL1
+ON_ERROR	LITERAL1
+ON_RATE	LITERAL1

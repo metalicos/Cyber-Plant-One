@@ -1,0 +1,13 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CDSoilMoistureSensor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+getMoistureInPercentage	KEYWORD2
+
+

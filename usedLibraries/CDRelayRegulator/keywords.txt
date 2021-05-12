@@ -1,0 +1,32 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+CDRelayRegulator	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setDirection	KEYWORD2
+setInput	KEYWORD2
+setMaintainValue	KEYWORD2
+setHysteresis	KEYWORD2
+setK	KEYWORD2
+setDt	KEYWORD2
+getDirection	KEYWORD2
+getInput	KEYWORD2
+getMaintainValue	KEYWORD2
+getHysteresis	KEYWORD2
+getK	KEYWORD2
+getDt	KEYWORD2
+getResultTimer	KEYWORD2
+compute 	KEYWORD2
+getResult	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+INCREASING	LITERAL1
+DECREASING	LITERAL1

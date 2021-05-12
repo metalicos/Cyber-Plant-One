@@ -1,0 +1,148 @@
+String createJSON() {
+  String msg = "{";
+  uint8_t i;
+
+  msg += "\"channelType\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.channelType[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"channelLogic\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.channelLogic[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"channelValue\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.channelValue[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"channelControlMode\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.channelControlMode[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"pidKp\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.pidKp[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"pidKi\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.pidKi[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"pidKd\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.pidKd[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"pidDt\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.pidDt[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"pidDirection\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.pidDirection[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"analogSensorType\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.analogSensorType[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"analogSensorData\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.analogSensorData[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"sensorControlValue\":[";
+  for (i = 0; i < 6; i++) {
+    msg += "\"" + String(cpd.sensorControlValue[i]) + "\"";
+    if (i != 5)
+      msg += ",";
+    else
+      msg += "],";
+  }
+
+  msg += "\"ph\":\"" + String(cpd.ph) + "\",";
+  msg += "\"waterTemperature\":\"" + String(cpd.waterTemperature) + "\",";
+  msg += "\"ec\":\"" + String(cpd.ec) + "\",";
+  msg += "\"tds\":\"" + String(cpd.tds) + "\",";
+  msg += "\"pressure\":\"" + String(cpd.pressure) + "\",";
+  msg += "\"airHumidity\":\"" + String(cpd.airHumidity) + "\",";
+  msg += "\"airTemperature\":\"" + String(cpd.airTemperature) + "\",";
+  msg += "\"altitude\":\"" + String(cpd.altitude) + "\",";
+
+  msg += "\"sound\":\"" + String(cpd.sound) + "\",";
+  msg += "\"waterCheck\":\"" + String(cpd.waterCheck) + "\",";
+  msg += "\"sleep\":\"" + String(cpd.sleep) + "\",";
+  msg += "\"sleepAfter\":\"" + String(cpd.sleepAfter) + "\",";
+  msg += "\"sendDataToServerEvery\":\"" + String(cpd.sendDataToServerEvery) + "\",";
+  msg += "\"checkSensorEvery\":\"" + String(cpd.checkSensorEvery) + "\",";
+  msg += "\"screenLight\":\"" + String(cpd.screenLight) + "\",";
+
+  msg += "\"dateSecond\":\"" + String(cpd.dateSecond) + "\",";
+  msg += "\"dateMinute\":\"" + String(cpd.dateMinute) + "\",";
+  msg += "\"dateHour\":\"" + String(cpd.dateHour) + "\",";
+  msg += "\"dateDay\":\"" + String(cpd.dateDay) + "\",";
+  msg += "\"dateMonth\":\"" + String(cpd.dateMonth) + "\",";
+  msg += "\"dateYear\":\"" + String(cpd.dateYear) + "\",";
+
+  msg += "\"channelName\":[";
+  for (i = 0; i < 6; i++)
+    msg += "\"" + cpd.channelName[i] + (i == 5 ? "\"" : "\",");
+  msg += "],";
+
+  msg += "\"wifiSSID\":\"" + cpd.wifiSSID + "\",";
+  msg += "\"wifiPASS\":\"" + cpd.wifiPASS + "\",";
+  msg += "\"uId\":\"" + String(cpd.uId) + "\"";
+  msg += "}";
+
+  return msg;
+}
